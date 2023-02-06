@@ -1,4 +1,4 @@
-'''import os
+import os
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "aaspass-dfqx-1014e2c5870d.json"
 
 import dialogflow_v2 as dialogflow
@@ -19,4 +19,4 @@ def detect_intent_from_text(text, session_id, language_code='en'):
 def fetch_reply(query, session_id):
     response = detect_intent_from_text(query, session_id)
     return response.fulfillment_text
-'''
+
